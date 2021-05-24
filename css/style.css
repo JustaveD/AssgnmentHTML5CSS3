@@ -1,0 +1,36 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    width: 0px;
+   
+}
+
+.block{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color:#fff;
+    font-size: 200px;
+}
+
+.block__header{
+    background-color: #264653;
+}
+.block__about_us{
+    background-color: #2a9d8f;
+}
+.block__the_team{
+    background-color: #e9c46a;
+}
+.block__our_project{
+    background-color: #f4a261;
+}
+.block__app{
+    background-color: #e76f51 ;
+}
+.block__contact_us{
+    background-color: #e63946;
+}
