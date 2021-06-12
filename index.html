@@ -229,7 +229,7 @@
                 class="input-content"
                 required=""
                 name=""
-                id="email"
+                id="message"
                 autocomplete="off"
               />
               <label for="a" class="input-label" id="input-label">
@@ -282,6 +282,29 @@
       </div>
     </div>
     <!-- Script -->
+    <script src="./js/validator.js"></script>
     <script src="./js/slide-show.js"></script>
+    <script>
+
+    Validator({
+      form: "#input1",
+      messageElement: ".messageError",
+      rules: [Validator.isRequired("#username")],
+      
+    });
+    Validator({
+      form: "#input2",
+      messageElement: ".messageError",
+      rules: [Validator.isEmail("#email")]
+
+    });
+    Validator({
+      form: "#input3",
+      messageElement: ".messageError",
+      rules: [Validator.isRequired("#message")]
+
+    });
+  
+    </script>
   </body>
 </html>
