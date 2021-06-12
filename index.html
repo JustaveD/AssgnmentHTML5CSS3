@@ -9,11 +9,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slide.css" />
     <title>Recovery</title>
   </head>
   <body>
     <div class="container">
-      <div class="block block__header" id="block__header">
+      <div class="block active block__header" id="block__header">
         <nav class="header-nav">
           <div class="nav-logo">Discovery</div>
           <ul class="nav-nav">
@@ -47,20 +48,240 @@
           </ul>
         </div>
       </div>
-      <div class="block block__about_us" id="block__about_us">About us</div>
-      <div class="block block__the_team" id='block__the_team'>The Team</div>
-      <div class="block block__our_project" id='block__our_project'>Our Project</div>
-      <div class="block block__app" id='block__app'>App</div>
-      <div class="block block__contact_us" id='block__contact_us'>Contact us</div>
+      <div class="block block__about_us" id="block__about_us">
+        <img
+          class="background"
+          src="./images/About_us/main-background.PNG"
+          alt=""
+        />
+        <div class="heading">
+          <div class="sub-text">We're here</div>
+          <div class="main-text">since 1989</div>
+        </div>
+        <div class="content">
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum atque
+            fugiat libero repellat error laborum laboriosam magni culpa facilis
+            nam? Quasi nisi corporis, cupiditate possimus quidem perspiciatis
+            ipsam expedita architecto dolores incidunt. Iste alias modi adipisci
+            beatae culpa velit sapiente? Nobis dicta repudiandae dolorem optio
+            ex vero labore voluptas veniam sed saepe expedita, itaque molestiae
+            quo perferendis minus blanditiis laborum sint velit cum? Facilis,
+            rem quos reiciendis vitae totam libero accusantium laboriosam quod
+            esse ullam, est velit. Obcaecati fugiat commodi, laudantium aperiam
+            minus at, excepturi, doloremque harum illum hic labore
+            necessitatibus officiis perferendis corporis aspernatur laborum quos
+            quibusdam neque tenetur.
+          </div>
+          <img src="./images/About_us/background.PNG" alt="" />
+        </div>
+      </div>
+      <div class="block block__the_team" id="block__the_team">
+        <h2>Our team</h2>
+        <p>Meet the mind behind every project</p>
+        <div class="slide-container">
+          <div class="slide">
+            <div class="slide-images" id="slide-images">
+              <img src="./images/The_team/person-6.jpg" id="lastClone" alt="" />
+              <img src="./images/The_team/person-1.jpg" alt="" />
+              <img src="./images/The_team/person-2.jpg" alt="" />
+              <img src="./images/The_team/person-3.jpg" alt="" />
+              <img src="./images/The_team/person-4.jpg" alt="" />
+              <img src="./images/The_team/person-5.jpg" alt="" />
+              <img src="./images/The_team/person-6.jpg" />
+              <img src="./images/The_team/person-1.jpg" id="firstClone" />
+            </div>
+            <i class="fa fa-arrow-left" aria-hidden="true" id="prevBtn"></i>
+            <i class="fa fa-arrow-right" aria-hidden="true" id="nextBtn"></i>
+            <div class="circle-bubble">
+              <div class="circle" data-count="1"></div>
+              <div class="circle" data-count="2"></div>
+              <div class="circle" data-count="3"></div>
+              <div class="circle active-circle" data-count="4"></div>
+              <div class="circle" data-count="5"></div>
+              <div class="circle" data-count="6"></div>
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="info-detail">
+            <h3 class="name">Martin is...</h3>
+            <p class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+              alias autem blanditiis non? Eligendi, sequi.
+            </p>
+            <p class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+              alias autem blanditiis non?
+            </p>
+            <h6 class="read-more">Read more</h6>
+          </div>
+          <div class="social-icon">
+            <p>You can find him on</p>
+            <ul>
+              <li>
+                <a href=""><i class="fab fa-dribbble-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="block block__our_project" id="block__our_project">
+        <h2>Our Work</h2>
+        <a href="https://justaved.github.io/Foods/" target="_blank"
+          >See our project</a
+        >
+      </div>
+      <div class="block block__app" id="block__app">
+        <div class="text">
+          <h2>Hey!</h2>
+          <p class="heading">We developed <span>an app</span> to help you.</p>
+          <p class="sub-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            laborum optio excepturi enim placeat. A?
+          </p>
+          <div class="button">Get it on Appstore</div>
+        </div>
+        <div class="icon">
+          <div class="item">
+            <i class="fas fa-user-friends"></i>
+            <p class="heading">User friendly</p>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis, eius!
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-newspaper"></i>
+            <p class="heading">Daily news</p>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis, eius!
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-comments"></i>
+            <p class="heading">Chat support</p>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritas,
+              eius!
+            </p>
+          </div>
+          <div class="item">
+            <i class="fas fa-chart-line"></i>
+            <p class="heading">Detailed analytics</p>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Veritatis, eius!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="block block__contact_us" id="block__contact_us">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.807086581437!2d106.63093961505685!3d10.826070392287845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292460db017b%3A0x60b93c87c6865dc!2zMzEgQ-G7kW5nIEzhu58sIFBoxrDhu51uZyAxNSwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1623504810214!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="heading">
+          <div class="color">Let's</div>
+          <div class="uncolor">talk!</div>
+        </div>
+        <div class="form">
+          <h4>Say hello!</h4>
+          <form>
+            <div class="input" id="input1">
+              <input
+                type="text"
+                class="input-content"
+                required=""
+                name=""
+                id="username"
+                autocomplete="off"
+              />
+              <label for="a" class="input-label" id="input-label">
+                <span>Name</span></label
+              >
+              <span class="messageError"></span>
+            </div>
+            <div class="input" id="input2">
+              <input
+                type="text"
+                class="input-content"
+                required=""
+                name=""
+                id="email"
+                autocomplete="off"
+              />
+              <label for="a" class="input-label" id="input-label">
+                <span>Email</span></label
+              >
+              <span class="messageError"></span>
+            </div>
+            <div class="input" id="input3">
+              <input
+                type="text"
+                class="input-content"
+                required=""
+                name=""
+                id="email"
+                autocomplete="off"
+              />
+              <label for="a" class="input-label" id="input-label">
+                <span>Message</span></label
+              >
+              <span class="messageError"></span>
+            </div>
+            
+              <ul class="icons">
+                <li>
+                  <a href=""><i class="fab fa-dribbble-square"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter-square"></i></a>
+                </li>
+              </ul>
+            
+            <button type="submit">Send message</button>
+          </form>
+        </div>
+        <div class="footer">
+          <div class="logo">Discovery</div>
+          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima distinctio accusamus quidem quas eius reiciendis.</div>
+          <div class="expolre">
+            <h2 class="title">Explore</h2>
+            <div class="content">
+              <div class="item">home</div>
+              <div class="item">project</div>
+              <div class="item active">contact us</div>
+              <div class="item">about us</div>
+              <div class="item">the team</div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="show-position" id='show-position'>
-          <a href="#block__header"></a>
-          <a href="#block__about_us"></a>
-          <a href="#block__the_team"></a>
-          <a href="#block__our_project"></a>
-          <a href="#block__app"></a>
-          <a href="#block__contact_us"></a>
+      <div class="show-position" id="show-position">
+        <a  class ='active'href="#block__header"></a>
+        <a href="#block__about_us"></a>
+        <a href="#block__the_team"></a>
+        <a href="#block__our_project"></a>
+        <a href="#block__app"></a>
+        <a href="#block__contact_us"></a>
       </div>
     </div>
+    <!-- Script -->
+    <script src="./js/slide-show.js"></script>
   </body>
 </html>
