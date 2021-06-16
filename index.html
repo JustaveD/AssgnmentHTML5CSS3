@@ -8,13 +8,51 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/splitting/dist/splitting-cells.css"
+    />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slide.css" />
+    <link rel="stylesheet" href="./css/split.css" />
     <title>Recovery</title>
   </head>
   <body>
     <div class="container">
       <div class="block active block__header" id="block__header">
+        <div class="button-active"><i class="fas fa-bars"></i></div>
+        <nav class="nav-active ">
+         
+          <a href="#block__header" class="nav__link">
+            <span class="nav__link--text" data-splitting>Home</span>
+            <span class="nav__link--text" data-splitting>Home</span>
+          </a>
+          <a href="#block__about_us" class="nav__link">
+            <span class="nav__link--text" data-splitting>About us</span>
+            <span class="nav__link--text" data-splitting>About us</span>
+          </a>
+          <a href="#block__the_team" class="nav__link">
+            <span class="nav__link--text" data-splitting>The team</span>
+            <span class="nav__link--text" data-splitting>The team</span>
+          </a>
+          <a href="#block__our_project" class="nav__link">
+            <span class="nav__link--text" data-splitting>Project</span>
+            <span class="nav__link--text" data-splitting>Project</span>
+          </a>
+          <a href="#block__app" class="nav__link">
+            <span class="nav__link--text" data-splitting>The app</span>
+            <span class="nav__link--text" data-splitting>The app</span>
+          </a>
+          <a href="#block__contact_us" class="nav__link">
+            <span class="nav__link--text" data-splitting>Chat with us</span>
+            <span class="nav__link--text" data-splitting>Chat with us</span>
+          </a>
+        </nav>
         <nav class="header-nav">
           <div class="nav-logo">Discovery</div>
           <ul class="nav-nav">
@@ -187,7 +225,14 @@
         </div>
       </div>
       <div class="block block__contact_us" id="block__contact_us">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.807086581437!2d106.63093961505685!3d10.826070392287845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292460db017b%3A0x60b93c87c6865dc!2zMzEgQ-G7kW5nIEzhu58sIFBoxrDhu51uZyAxNSwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1623504810214!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.807086581437!2d106.63093961505685!3d10.826070392287845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3175292460db017b%3A0x60b93c87c6865dc!2zMzEgQ-G7kW5nIEzhu58sIFBoxrDhu51uZyAxNSwgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaWV0bmFt!5e0!3m2!1sen!2s!4v1623504810214!5m2!1sen!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
         <div class="heading">
           <div class="color">Let's</div>
           <div class="uncolor">talk!</div>
@@ -237,28 +282,31 @@
               >
               <span class="messageError"></span>
             </div>
-            
-              <ul class="icons">
-                <li>
-                  <a href=""><i class="fab fa-dribbble-square"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-linkedin"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-facebook-square"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fab fa-twitter-square"></i></a>
-                </li>
-              </ul>
-            
+
+            <ul class="icons">
+              <li>
+                <a href=""><i class="fab fa-dribbble-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+
             <button type="submit">Send message</button>
           </form>
         </div>
         <div class="footer">
           <div class="logo">Discovery</div>
-          <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima distinctio accusamus quidem quas eius reiciendis.</div>
+          <div class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+            distinctio accusamus quidem quas eius reiciendis.
+          </div>
           <div class="expolre">
             <h2 class="title">Explore</h2>
             <div class="content">
@@ -273,7 +321,7 @@
       </div>
 
       <div class="show-position" id="show-position">
-        <a  class ='active'href="#block__header"></a>
+        <a class="active" href="#block__header"></a>
         <a href="#block__about_us"></a>
         <a href="#block__the_team"></a>
         <a href="#block__our_project"></a>
@@ -285,26 +333,22 @@
     <script src="./js/validator.js"></script>
     <script src="./js/slide-show.js"></script>
     <script>
-
-    Validator({
-      form: "#input1",
-      messageElement: ".messageError",
-      rules: [Validator.isRequired("#username")],
-      
-    });
-    Validator({
-      form: "#input2",
-      messageElement: ".messageError",
-      rules: [Validator.isEmail("#email")]
-
-    });
-    Validator({
-      form: "#input3",
-      messageElement: ".messageError",
-      rules: [Validator.isRequired("#message")]
-
-    });
-  
+      Validator({
+        form: "#input1",
+        messageElement: ".messageError",
+        rules: [Validator.isRequired("#username")],
+      });
+      Validator({
+        form: "#input2",
+        messageElement: ".messageError",
+        rules: [Validator.isEmail("#email")],
+      });
+      Validator({
+        form: "#input3",
+        messageElement: ".messageError",
+        rules: [Validator.isRequired("#message")],
+      });
     </script>
+    <script src="./js/split.js"></script>
   </body>
 </html>

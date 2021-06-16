@@ -76,7 +76,7 @@ function activeNextCircle() {
 function activePrveCircle() {
   circles[count - 1 + 1].classList.remove("active-circle");
   if (count == 0) {
-    circles[6].classList.add("active-circle");
+    circles[5].classList.add("active-circle");
   } else {
     circles[count - 1].classList.add("active-circle");
   }
@@ -236,3 +236,23 @@ function scrollEffect(){
   }
 }
 window.addEventListener('scroll', scrollEffect);
+
+
+let buttonActive = document.querySelector('.button-active');
+let iActive = document.querySelector('.button-active i');
+let navActive = document.querySelector('.nav-active');
+let aNav = document.querySelectorAll('.nav-active a');
+buttonActive.addEventListener('click',function(){
+  navActive.classList.toggle('active');
+  // if(navActive.classList.)
+  iActive.classList.toggle('fa-times');
+  iActive.classList.toggle('fa-bars');
+})
+aNav.forEach(e=>{
+  e.addEventListener('click',function(){
+    navActive.classList.remove('active');
+    
+    iActive.classList.toggle('fa-times');
+    iActive.classList.toggle('fa-bars');
+  })
+})

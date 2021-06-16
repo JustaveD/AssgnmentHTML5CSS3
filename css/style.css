@@ -47,11 +47,19 @@ html{
     flex-direction: column;
     justify-content: space-between;
     padding: 15px 30px 0px 30px;
+    overflow: hidden;
+    position: relative;
 }
 .header-nav {
     display: flex;
     justify-content: space-between;
     
+}
+.nav-active{
+    transform: translateX(100vw);
+    position: absolute;
+    top:0;
+    transition: all .5s ease;
 }
 .nav-logo{
     font-size: 28px;
@@ -154,7 +162,9 @@ html{
     font-size: 28px;
     text-shadow: 0 0 5px #00bbf9;
 }
-
+.button-active{
+    display: none;
+}
 
 .block__about_us{
     position: relative;
@@ -293,7 +303,7 @@ html{
 .slide {
     clear: both;
     width: 400px;
-    height: 500px;
+    height: 400px;
     border-radius: 10%;
     /* background-image: url(../images/banner.png); */
     background-size: cover;
@@ -481,7 +491,7 @@ html{
     flex-grow: 2;
     padding-left: 250px;
 }.footer .expolre .content{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -751,4 +761,453 @@ i.active{
 }
 .show-position a.active{
     background-color: #fff;
+}
+.block__about_us .heading{
+    z-index: 100;
+}
+
+/*  Laptop  1920 1080*/
+@media screen and (max-width: 1920px) {
+    .block__about_us .heading .main-text{
+        font-size: 128px;
+        z-index: 100;
+    }
+    .block__about_us .heading{
+        z-index: 100;
+    }
+    .block__about_us .content .text{
+        font-size: 18px;
+    }
+    .block__about_us .content  img{
+        
+        margin-top: 30px;
+        width: 60vh;
+        height: 70vh;
+        z-index: 1;
+    }
+
+    .block__the_team h2{
+        font-size: 108px;
+    }
+    .slide{
+        top:28%;
+        height: 500px;
+        width: 400px;
+    }
+    .slide img{
+        width: 400px;
+    }
+    .block__the_team .info .info-detail .name{
+        font-size: 18px;
+    }
+    .block__the_team .info .info-detail .text{
+        font-size: 16px;
+    }
+
+    .block__our_project h2{
+        font-size: 128px;
+    }
+    .block__our_project a{
+        bottom: 20%;
+        left:47%;
+    }
+
+    .block__contact_us iframe{
+        width: 600px;
+        height: 350px;
+        top:40%;
+    }
+    .block__contact_us form .icons{
+        margin-top:40px;
+    }
+    
+}
+/*  Laptop  1440 1080*/
+@media screen and (max-width: 1440px) {
+    
+    .block__our_project a{
+        bottom: 20%;
+        left:62%;
+    }
+    .slide{
+        top:28%;
+        height: 500px;
+        width: 400px;
+    }
+    .slide img{
+        width: 400px;
+    }
+    .block__app .text{
+        margin-left: 100px;
+    }
+    .block__app .icon{
+       right: 50px;
+       top:25%;
+    }
+    .block__contact_us iframe{
+        width: 400px;
+        height: 300px;
+        top:40%;
+    }
+    .block__contact_us form .icons{
+        margin-top:40px;
+    }
+    .footer .content{
+        width:90%;
+    }
+}
+/*  Laptop  1024 1080*/
+@media screen and (max-width: 1024px) {
+    .block__about_us .heading{
+        margin-top: 20px;
+    }
+    .block__about_us .heading .main-text{
+        font-size: 90px;
+        z-index: 100;
+    }
+    .block__about_us .heading{
+        z-index: 100;
+    }
+    .block__about_us .content .text{
+        font-size: 14px;
+    }
+    
+    .block__about_us .content  img{
+        /* width: 300px; */
+        margin-top: 30px;
+        width: 60vh;
+        height: 70vh;
+        z-index: 1;
+    }
+
+    .block__the_team h2{
+        font-size: 72px;
+    }
+    .slide{
+        top:22%;
+        height: 450px;
+        width: 350px;
+    }
+    .block__the_team .info .info-detail .name{
+        font-size: 14px;
+    }
+    .block__the_team .info .info-detail .text{
+        font-size: 12px;
+    }
+    .block__our_project{
+        background-size: cover;
+    }
+    .block__our_project h2{
+        font-size: 108px;
+    }
+    .block__our_project a{
+        bottom: 20%;
+        left:67%;
+    }
+    
+    .block__about_us .text img{
+       width: 300px;
+    }.block__app  .text{
+        width: 20%;
+        margin-top: 30px;
+    }
+
+    .block__app  .text h2{
+        font-size: 54px;
+    }
+    .block__app .icon {
+        top:20%;
+        right: 10px;
+    }
+    .block__app .icon .item i{
+        font-size: 20px;;
+    }
+    .block__contact_us iframe{
+        width: 300px;
+        height: 200px;
+        top:40%;
+    }
+}
+/*  Tablet*/
+@media screen and (max-width: 920px) {
+     .block__header ul.nav-nav {
+        display: none;
+    }
+    .block__about_us .heading{
+        top:0;
+    }
+    .block__our_project a{
+        top:30%;
+        left:10%;
+        height: 40px;
+    }
+    .block__app .icon{
+        position: absolute;
+        align-items: flex-end;
+        margin-top: 180px;
+        justify-content: space-evenly;
+        top:40%;
+        left: 0;
+        width: 100%;
+    }
+    .block__app .icon .item{
+        width: 20%;
+    }
+    .block__app .item .heading{
+        font-size: 17px;
+    }
+    .block__app .text{
+        left:45%;
+        width: 40%;
+    }
+    .button-active{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top:20px;
+        color:#fff;
+        z-index: 100000;
+    }
+    .button-active i{
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .button-active i:hover{
+        color: #e63946;
+    }
+    .nav-active.active{
+        transform: translateX(0);
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        z-index: 1000;
+    }
+    .block__about_us .main-text{
+        font-size: 54px;
+    }
+
+    .block__about_us .content  img{
+        
+        margin-top: 30px;
+        width: 50vh;
+        height: 60vh;
+        z-index: 1;
+    }
+
+    .block__contact_us iframe{
+        width: 300px;
+        height: 200px;
+        top:40%;
+    }
+    .footer{
+        justify-content: center
+    }
+    .footer .text{
+        font-size: 14px;
+        display: none;
+    }
+    .block__contact_us .form{
+        width: 100%;
+    }
+    .footer .expolre{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10px;
+        width: 200px;
+        display: none;
+    }
+
+}
+/*  Tablet*/
+@media screen and (max-width: 768px) {
+    .header-main p:nth-child(1){
+        font-size: 100px;
+    }
+    .block__about_us .content img{
+        width: 40vh;
+    }
+    .block__about_us .heading{
+        top:0%;
+    }
+    .block__about_us .heading .main-text{
+        font-size:70px;
+        margin-top: 10px;
+    }
+    .slide{
+        right: 40px;
+    }
+    .block__our_project a{
+        top:30%;
+        left:20%;
+        height: 40px;
+    }
+    .block__app .icon{
+        position: absolute;
+        align-items: flex-end;
+        margin-top: 180px;
+        justify-content: space-evenly;
+        top:40%;
+        left: 0;
+        width: 100%;
+    }
+    .block__app .icon .item{
+        width: 20%;
+    }
+    .block__app .item .heading{
+        font-size: 17px;
+    }
+    .block__app .text{
+        left:45%;
+        width: 40%;
+    }
+    .block__contact_us .heading .color{
+        font-size: 80px;
+        height: 200px;
+    }
+    .block__contact_us .heading .uncolor{
+        font-size: 80px;
+        height: 200px;
+    }
+    .block__contact_us iframe{
+        height: 300px;
+    }
+    .footer{
+        justify-content: flex-start;
+    }
+    .footer .text{
+        font-size: 14px;
+    }
+    .footer .expolre{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .block{
+        min-height: 100vh;
+    }
+    .header-main p:nth-child(1){
+        font-size: 50px;
+    }
+    .nav-active a{
+        font-size:40px;
+    }
+    .block__about_us .heading{
+        left: 50%;
+        transform: translateX(-50%);
+        top:0%;
+        text-align: center;
+    }
+    
+    .block__about_us .content .text{
+        font-size: 10px;
+        position:absolute;
+        bottom:0;
+        width: 90%;
+        left: 50%;
+        text-align: justify;
+        transform: translateX(-50%);
+    }.block__about_us .content{
+        padding: 0;
+    }
+    .block__about_us .content img{
+        width: 50vw;
+        height: 60vw;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide{
+        top:10%;
+        height: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .block__the_team h2{
+        font-size: 30px;
+    }
+    .block__the_team .info{
+        flex-direction: column;
+        top:60%;
+        width: 100%;
+        height: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin-top: 10px;
+    }
+    .block__the_team .info .info-detail h3{
+        text-align: center;
+    }
+    .block__the_team .info .info-detail p{
+        text-align: center;
+    }
+    .block__the_team .info .info-detail h6{
+        text-align: center;
+    }
+    .block__our_project h2{
+        font-size: 50px;
+        top:15%;
+    }
+    .block__app {
+        background-image: #023e8a;
+    }
+    .block__app .icon p:nth-child(2){
+        display: none;
+    }
+    .block__app .button {
+        top:-100px;
+        position: absolute;
+        left:-100%;
+    }
+    .block__app  .heading{
+        display: none;
+
+    }
+    .block__app .text{
+        margin-left: 90px;
+    }
+
+
+    .block__contact_us .heading .color{
+        font-size: 40px;
+        height: 100px;
+    }
+    .block__contact_us .heading .uncolor{
+        font-size: 40px;
+        height: 100px;
+    }
+    .block__contact_us iframe{
+        top:15%;
+        left:50%;
+        transform: translateX(-50%);
+        height: 200px;
+    }
+    .footer{
+        justify-content: center
+    }
+    .footer .text{
+        font-size: 14px;
+        display: none;
+    }
+    .block__contact_us .form{
+        width: 100%;
+    }
+    .footer .expolre{
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 10px;
+        width: 200px;
+        display: none;
+    }
 }
