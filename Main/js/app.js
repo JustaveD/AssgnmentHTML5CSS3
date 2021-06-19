@@ -106,8 +106,7 @@ let dataImg = [
     {
       name: "quả táo",
     },
-  ]
-  ,
+  ],
   [
     {
       src: "./images/Capcha/fish1.jpg",
@@ -128,16 +127,16 @@ let dataImg = [
     {
       name: "con rùa",
     },
-  ]
+  ],
 ];
 
 //render image
 
-const res1 = document.querySelector('.res1');
+const res1 = document.querySelector(".res1");
 const btnSend = document.querySelector(".form button");
 const capcha = document.querySelector(".capcha");
 btnSend.disabled = true;
-const confirm = document.querySelector('.check-btn');
+const confirm = document.querySelector(".check-btn");
 const imges = document.querySelectorAll(".capcha .sub img");
 console.log(imges);
 let indexImg = 0;
@@ -149,12 +148,10 @@ function renderImage() {
 }
 renderImage();
 confirm.addEventListener("click", function () {
-  
   capcha.classList.add("active");
 });
 
 function allowDrag(e) {
-    
   e.preventDefault();
 }
 function drop(e) {
@@ -163,30 +160,33 @@ function drop(e) {
   let data = e.dataTransfer.getData("text");
   if (data == "true") {
     capcha.remove("active");
-    btnSend.style.cursor ='pointer';
+    btnSend.style.cursor = "pointer";
     btnSend.disabled = false;
-    btnSend.style.backgroundColor = '#c00010'
+    btnSend.style.backgroundColor = "#c00010";
     res1.classList.add("active");
-    res1.innerText = "Đã gửi";
+    res1.innerText = "Bạn chọn đúng";
     setTimeout(() => {
       res1.classList.remove("active");
+      res1.classList.add("active");
+      res1.innerText = "Bây giờ bạn có thể gửi";
+      setTimeout(() => {
+        res1.classList.remove("active");
+      }, 4000);
     }, 2000);
-  }
-  else{
-      if(indexImg == dataImg.length-1){
-        const nameCapcha = capcha.querySelector('p');
-          indexImg= 0;
-          nameCapcha.innerText =`Hãy kéo ${dataImg[indexImg][4]['name']} vào ô phía trên!`
-      }else{
-        const nameCapcha = capcha.querySelector('p');
-          indexImg++;
-          nameCapcha.innerText =`Hãy kéo ${dataImg[indexImg][4]['name']} vào ô phía trên!`;
-      }
-      renderImage();
+  } else {
+    if (indexImg == dataImg.length - 1) {
+      const nameCapcha = capcha.querySelector("p");
+      indexImg = 0;
+      nameCapcha.innerText = `Hãy kéo ${dataImg[indexImg][4]["name"]} vào ô phía trên!`;
+    } else {
+      const nameCapcha = capcha.querySelector("p");
+      indexImg++;
+      nameCapcha.innerText = `Hãy kéo ${dataImg[indexImg][4]["name"]} vào ô phía trên!`;
+    }
+    renderImage();
   }
 }
 function drag(e) {
   e.dataTransfer.setData("text", e.target.id);
   console.log(e.target.id);
 }
-
